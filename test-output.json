@@ -1,0 +1,589 @@
+{
+  "numTotalTestSuites": 16,
+  "numPassedTestSuites": 2,
+  "numFailedTestSuites": 14,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 46,
+  "numPassedTests": 10,
+  "numFailedTests": 36,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1790364207304,
+  "success": false,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["browserDefensiveGuards (FIX-06)"],
+          "fullName": "browserDefensiveGuards (FIX-06) FIX-06: App renders without throwing when window.innerWidth is 0 (jsdom default)",
+          "status": "failed",
+          "title": "FIX-06: App renders without throwing when window.innerWidth is 0 (jsdom default)",
+          "duration": 36.36120000000028,
+          "failureMessages": [
+            "AssertionError: expected [Function] to not throw an error but 'ReferenceError: React is not defined' was thrown\n    at Proxy.<anonymous> (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/expect/dist/index.js:1509:21)\n    at Proxy.<anonymous> (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/expect/dist/index.js:972:17)\n    at Proxy.methodWrapper (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/chai/index.js:1686:25)\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\browserDefensiveGuards.test.jsx:37:43\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["browserDefensiveGuards (FIX-06)"],
+          "fullName": "browserDefensiveGuards (FIX-06) FIX-06: App renders without throwing when window is available",
+          "status": "failed",
+          "title": "FIX-06: App renders without throwing when window is available",
+          "duration": 5.349199999999655,
+          "failureMessages": [
+            "AssertionError: expected [Function] to not throw an error but 'ReferenceError: React is not defined' was thrown\n    at Proxy.<anonymous> (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/expect/dist/index.js:1509:21)\n    at Proxy.<anonymous> (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/expect/dist/index.js:972:17)\n    at Proxy.methodWrapper (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/chai/index.js:1686:25)\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\browserDefensiveGuards.test.jsx:45:43\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["browserDefensiveGuards (FIX-06)"],
+          "fullName": "browserDefensiveGuards (FIX-06) FIX-06: App renders without throwing when window has large dimensions",
+          "status": "failed",
+          "title": "FIX-06: App renders without throwing when window has large dimensions",
+          "duration": 4.551900000000387,
+          "failureMessages": [
+            "AssertionError: expected [Function] to not throw an error but 'ReferenceError: React is not defined' was thrown\n    at Proxy.<anonymous> (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/expect/dist/index.js:1509:21)\n    at Proxy.<anonymous> (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/expect/dist/index.js:972:17)\n    at Proxy.methodWrapper (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/chai/index.js:1686:25)\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\browserDefensiveGuards.test.jsx:56:43\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["browserDefensiveGuards (FIX-06)"],
+          "fullName": "browserDefensiveGuards (FIX-06) grid cells are rendered after mount (DOM is not empty)",
+          "status": "failed",
+          "title": "grid cells are rendered after mount (DOM is not empty)",
+          "duration": 4.266899999999623,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\browserDefensiveGuards.test.jsx:60:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        }
+      ],
+      "startTime": 1790364213241,
+      "endTime": 1790364213291.2668,
+      "status": "failed",
+      "message": "",
+      "name": "C:/Users/DELL/OneDrive/Documents/gridcraft-main/src/__tests__/browserDefensiveGuards.test.jsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["exportWithFilename (FIX-01 + FIX-07)"],
+          "fullName": "exportWithFilename (FIX-01 + FIX-07) FIX-01: clicking Export calls window.prompt to ask for a filename",
+          "status": "failed",
+          "title": "FIX-01: clicking Export calls window.prompt to ask for a filename",
+          "duration": 22.100800000000163,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\exportWithFilename.test.jsx:21:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["exportWithFilename (FIX-01 + FIX-07)"],
+          "fullName": "exportWithFilename (FIX-01 + FIX-07) FIX-01: passes the sanitised filename to downloadImage via the prototype patch",
+          "status": "failed",
+          "title": "FIX-01: passes the sanitised filename to downloadImage via the prototype patch",
+          "duration": 3.288300000000163,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\exportWithFilename.test.jsx:33:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["exportWithFilename (FIX-01 + FIX-07)"],
+          "fullName": "exportWithFilename (FIX-01 + FIX-07) FIX-01: if user cancels prompt (returns null) downloadImage is NOT called",
+          "status": "failed",
+          "title": "FIX-01: if user cancels prompt (returns null) downloadImage is NOT called",
+          "duration": 2.6006999999999607,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\exportWithFilename.test.jsx:45:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["exportWithFilename (FIX-01 + FIX-07)"],
+          "fullName": "exportWithFilename (FIX-01 + FIX-07) FIX-07: clicking Export while isExporting=true does not call window.prompt",
+          "status": "failed",
+          "title": "FIX-07: clicking Export while isExporting=true does not call window.prompt",
+          "duration": 2.155800000000454,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\exportWithFilename.test.jsx:56:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["exportWithFilename (FIX-01 + FIX-07)"],
+          "fullName": "exportWithFilename (FIX-01 + FIX-07) FIX-07: Export button is disabled when isExporting=true",
+          "status": "failed",
+          "title": "FIX-07: Export button is disabled when isExporting=true",
+          "duration": 2.624499999999898,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\exportWithFilename.test.jsx:68:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["exportWithFilename (FIX-01 + FIX-07)"],
+          "fullName": "exportWithFilename (FIX-01 + FIX-07) FIX-07: Export button is enabled when isExporting=false",
+          "status": "failed",
+          "title": "FIX-07: Export button is enabled when isExporting=false",
+          "duration": 2.4291000000002896,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\exportWithFilename.test.jsx:74:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        }
+      ],
+      "startTime": 1790364213041,
+      "endTime": 1790364213076.4292,
+      "status": "failed",
+      "message": "",
+      "name": "C:/Users/DELL/OneDrive/Documents/gridcraft-main/src/__tests__/exportWithFilename.test.jsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["floodFill"],
+          "fullName": "floodFill fills a connected region with the new color",
+          "status": "passed",
+          "title": "fills a connected region with the new color",
+          "duration": 4.4365999999999985,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["floodFill"],
+          "fullName": "floodFill same-color no-op: returns the original array reference",
+          "status": "passed",
+          "title": "same-color no-op: returns the original array reference",
+          "duration": 0.8449000000000524,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["floodFill"],
+          "fullName": "floodFill fills only the connected region, leaving isolated cells untouched",
+          "status": "passed",
+          "title": "fills only the connected region, leaving isolated cells untouched",
+          "duration": 1.5790999999999258,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["floodFill"],
+          "fullName": "floodFill fills at top-left corner (index 0)",
+          "status": "passed",
+          "title": "fills at top-left corner (index 0)",
+          "duration": 1.1601000000000568,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["floodFill"],
+          "fullName": "floodFill fills at bottom-right corner (index 15)",
+          "status": "passed",
+          "title": "fills at bottom-right corner (index 15)",
+          "duration": 1.6152000000001863,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["floodFill"],
+          "fullName": "floodFill fills at right edge (col = gridSize - 1) without bleeding past edge",
+          "status": "passed",
+          "title": "fills at right edge (col = gridSize - 1) without bleeding past edge",
+          "duration": 1.223399999999856,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["floodFill"],
+          "fullName": "floodFill fills at left edge (col = 0) without bleeding past edge",
+          "status": "passed",
+          "title": "fills at left edge (col = 0) without bleeding past edge",
+          "duration": 1.333599999999933,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["floodFill"],
+          "fullName": "floodFill full grid fill when all cells are same color",
+          "status": "passed",
+          "title": "full grid fill when all cells are same color",
+          "duration": 0.8162000000002081,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["floodFill"],
+          "fullName": "floodFill does not mutate the original cells array",
+          "status": "passed",
+          "title": "does not mutate the original cells array",
+          "duration": 2.95679999999993,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["floodFill"],
+          "fullName": "floodFill returns a new array (not the same reference) when a fill happens",
+          "status": "passed",
+          "title": "returns a new array (not the same reference) when a fill happens",
+          "duration": 1.9238000000004831,
+          "failureMessages": [],
+          "meta": {}
+        }
+      ],
+      "startTime": 1790364212523,
+      "endTime": 1790364212541.9238,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/DELL/OneDrive/Documents/gridcraft-main/src/__tests__/floodFill.test.js"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["changeGridSize (FIX-04)"],
+          "fullName": "changeGridSize (FIX-04) FIX-04: switching to 32×32 does NOT force preview mode (showGrid stays true)",
+          "status": "failed",
+          "title": "FIX-04: switching to 32×32 does NOT force preview mode (showGrid stays true)",
+          "duration": 26.731300000000374,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\gridSize.test.jsx:35:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["changeGridSize (FIX-04)"],
+          "fullName": "changeGridSize (FIX-04) FIX-04: switching to 64×64 does NOT force preview mode",
+          "status": "failed",
+          "title": "FIX-04: switching to 64×64 does NOT force preview mode",
+          "duration": 7.253700000000208,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\gridSize.test.jsx:51:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["changeGridSize (FIX-04)"],
+          "fullName": "changeGridSize (FIX-04) FIX-04: switching to 128×128 does NOT force preview mode",
+          "status": "failed",
+          "title": "FIX-04: switching to 128×128 does NOT force preview mode",
+          "duration": 3.338600000000042,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\gridSize.test.jsx:62:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["changeGridSize (FIX-04)"],
+          "fullName": "changeGridSize (FIX-04) grid size buttons are disabled when in preview mode",
+          "status": "failed",
+          "title": "grid size buttons are disabled when in preview mode",
+          "duration": 2.685500000000502,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\gridSize.test.jsx:72:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["changeGridSize (FIX-04)"],
+          "fullName": "changeGridSize (FIX-04) changing grid size resets the history",
+          "status": "failed",
+          "title": "changing grid size resets the history",
+          "duration": 2.921299999999974,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\gridSize.test.jsx:84:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        }
+      ],
+      "startTime": 1790364213233,
+      "endTime": 1790364213276.9214,
+      "status": "failed",
+      "message": "",
+      "name": "C:/Users/DELL/OneDrive/Documents/gridcraft-main/src/__tests__/gridSize.test.jsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["importImage (FIX-09)"],
+          "fullName": "importImage (FIX-09) FIX-09: shows an error toast when canvas.getContext returns null",
+          "status": "failed",
+          "title": "FIX-09: shows an error toast when canvas.getContext returns null",
+          "duration": 28.294299999999566,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\importExport.test.jsx:38:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["importImage (FIX-09)"],
+          "fullName": "importImage (FIX-09) FIX-09: does not crash when canvas context is null (no unhandled error)",
+          "status": "failed",
+          "title": "FIX-09: does not crash when canvas context is null (no unhandled error)",
+          "duration": 3.7361000000000786,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\importExport.test.jsx:99:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["importImage (FIX-09)"],
+          "fullName": "importImage (FIX-09) rejects non-image files with an error toast",
+          "status": "failed",
+          "title": "rejects non-image files with an error toast",
+          "duration": 3.225300000000061,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\importExport.test.jsx:130:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        }
+      ],
+      "startTime": 1790364213232,
+      "endTime": 1790364213268.2253,
+      "status": "failed",
+      "message": "",
+      "name": "C:/Users/DELL/OneDrive/Documents/gridcraft-main/src/__tests__/importExport.test.jsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["keyboard shortcuts"],
+          "fullName": "keyboard shortcuts pressing E toggles the eraser tool on",
+          "status": "failed",
+          "title": "pressing E toggles the eraser tool on",
+          "duration": 22.957099999999627,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\keyboardShortcuts.test.jsx:51:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["keyboard shortcuts"],
+          "fullName": "keyboard shortcuts pressing E a second time toggles the eraser tool off",
+          "status": "failed",
+          "title": "pressing E a second time toggles the eraser tool off",
+          "duration": 3.4448999999995067,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\keyboardShortcuts.test.jsx:57:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["keyboard shortcuts"],
+          "fullName": "keyboard shortcuts pressing A selects the paint brush (deactivates eraser)",
+          "status": "failed",
+          "title": "pressing A selects the paint brush (deactivates eraser)",
+          "duration": 2.927099999999882,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\keyboardShortcuts.test.jsx:64:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["keyboard shortcuts"],
+          "fullName": "keyboard shortcuts pressing B toggles the fill tool on",
+          "status": "failed",
+          "title": "pressing B toggles the fill tool on",
+          "duration": 2.9615999999996347,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\keyboardShortcuts.test.jsx:76:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["keyboard shortcuts"],
+          "fullName": "keyboard shortcuts pressing B a second time toggles the fill tool off",
+          "status": "failed",
+          "title": "pressing B a second time toggles the fill tool off",
+          "duration": 2.742099999999482,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\keyboardShortcuts.test.jsx:82:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["keyboard shortcuts"],
+          "fullName": "keyboard shortcuts Ctrl+Z is a no-op when history is empty (does not throw)",
+          "status": "failed",
+          "title": "Ctrl+Z is a no-op when history is empty (does not throw)",
+          "duration": 2.5981999999994514,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\keyboardShortcuts.test.jsx:91:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["keyboard shortcuts"],
+          "fullName": "keyboard shortcuts Ctrl+Y is a no-op when future is empty (does not throw)",
+          "status": "failed",
+          "title": "Ctrl+Y is a no-op when future is empty (does not throw)",
+          "duration": 3.6042999999999665,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\keyboardShortcuts.test.jsx:98:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["keyboard shortcuts"],
+          "fullName": "keyboard shortcuts tool shortcuts show a toast in preview mode instead of switching tools",
+          "status": "failed",
+          "title": "tool shortcuts show a toast in preview mode instead of switching tools",
+          "duration": 3.39850000000024,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\keyboardShortcuts.test.jsx:107:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["keyboard shortcuts"],
+          "fullName": "keyboard shortcuts Ctrl+Z still works in preview mode",
+          "status": "failed",
+          "title": "Ctrl+Z still works in preview mode",
+          "duration": 3.304500000000189,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\keyboardShortcuts.test.jsx:126:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        }
+      ],
+      "startTime": 1790364213243,
+      "endTime": 1790364213292.3044,
+      "status": "failed",
+      "message": "",
+      "name": "C:/Users/DELL/OneDrive/Documents/gridcraft-main/src/__tests__/keyboardShortcuts.test.jsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["toggleTheme (FIX-02)"],
+          "fullName": "toggleTheme (FIX-02) first click adds light-theme class to document.body",
+          "status": "failed",
+          "title": "first click adds light-theme class to document.body",
+          "duration": 27.11920000000009,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\toggleTheme.test.jsx:41:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["toggleTheme (FIX-02)"],
+          "fullName": "toggleTheme (FIX-02) second click removes light-theme class from document.body",
+          "status": "failed",
+          "title": "second click removes light-theme class from document.body",
+          "duration": 3.65729999999985,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\toggleTheme.test.jsx:50:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["toggleTheme (FIX-02)"],
+          "fullName": "toggleTheme (FIX-02) toggles the theme icon between sun and moon",
+          "status": "failed",
+          "title": "toggles the theme icon between sun and moon",
+          "duration": 2.4786000000003696,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\toggleTheme.test.jsx:60:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        }
+      ],
+      "startTime": 1790364217302,
+      "endTime": 1790364217335.4785,
+      "status": "failed",
+      "message": "",
+      "name": "C:/Users/DELL/OneDrive/Documents/gridcraft-main/src/__tests__/toggleTheme.test.jsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["undo/redo (FIX-03)"],
+          "fullName": "undo/redo (FIX-03) Ctrl+Z undoes the most recent paint operation",
+          "status": "failed",
+          "title": "Ctrl+Z undoes the most recent paint operation",
+          "duration": 26.721699999999146,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\undoRedo.test.jsx:52:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["undo/redo (FIX-03)"],
+          "fullName": "undo/redo (FIX-03) Ctrl+Y redoes after undo",
+          "status": "failed",
+          "title": "Ctrl+Y redoes after undo",
+          "duration": 4.9637000000002445,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\undoRedo.test.jsx:69:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["undo/redo (FIX-03)"],
+          "fullName": "undo/redo (FIX-03) undo button is enabled after painting a cell",
+          "status": "failed",
+          "title": "undo button is enabled after painting a cell",
+          "duration": 3.1606000000001586,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\undoRedo.test.jsx:84:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["undo/redo (FIX-03)"],
+          "fullName": "undo/redo (FIX-03) undo button is disabled before any paint",
+          "status": "failed",
+          "title": "undo button is disabled before any paint",
+          "duration": 2.7199000000000524,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\undoRedo.test.jsx:94:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["undo/redo (FIX-03)"],
+          "fullName": "undo/redo (FIX-03) redo button is disabled until an undo has occurred",
+          "status": "failed",
+          "title": "redo button is disabled until an undo has occurred",
+          "duration": 2.743600000000697,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\undoRedo.test.jsx:101:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": ["undo/redo (FIX-03)"],
+          "fullName": "undo/redo (FIX-03) sequential undos restore each previous state in order",
+          "status": "failed",
+          "title": "sequential undos restore each previous state in order",
+          "duration": 3.7998999999999796,
+          "failureMessages": [
+            "ReferenceError: React is not defined\n    at C:\\Users\\DELL\\OneDrive\\Documents\\gridcraft-main\\src\\__tests__\\undoRedo.test.jsx:112:16\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:146:14\n    at file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:533:11\n    at runWithTimeout (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:39:7)\n    at runTest (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1056:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///C:/Users/DELL/OneDrive/Documents/gridcraft-main/node_modules/@vitest/runner/dist/index.js:1271:3)"
+          ],
+          "meta": {}
+        }
+      ],
+      "startTime": 1790364213236,
+      "endTime": 1790364213281.7998,
+      "status": "failed",
+      "message": "",
+      "name": "C:/Users/DELL/OneDrive/Documents/gridcraft-main/src/__tests__/undoRedo.test.jsx"
+    }
+  ]
+}

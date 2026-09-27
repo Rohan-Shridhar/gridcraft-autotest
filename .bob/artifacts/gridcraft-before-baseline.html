@@ -1,0 +1,278 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GridCraft — BEFORE Baseline</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Segoe UI",system-ui,sans-serif;font-size:14px;line-height:1.6;background:#fff;color:#1f2328;padding:2rem}
+  .page{max-width:760px;margin:0 auto}
+  h1{font-size:1.5rem;font-weight:700;margin-bottom:.25rem}
+  .subtitle{color:#57606a;font-size:.9rem;margin-bottom:2rem;border-bottom:1px solid #e5e7eb;padding-bottom:.75rem}
+  h2{font-size:1.1rem;font-weight:700;margin:1.75rem 0 .6rem;color:#1f2328;border-left:3px solid #3b82d4;padding-left:.6rem}
+  h3{font-size:.95rem;font-weight:600;margin:.9rem 0 .3rem;color:#1f2328}
+  p{margin:.3rem 0 .5rem}
+  table{width:100%;border-collapse:collapse;margin:.5rem 0 1rem;font-size:13px}
+  th{background:#f7f8fa;text-align:left;padding:.45rem .6rem;border:1px solid #e5e7eb;font-weight:600;color:#1f2328}
+  td{padding:.4rem .6rem;border:1px solid #e5e7eb;vertical-align:top}
+  .badge{display:inline-block;padding:.1rem .45rem;border-radius:3px;font-size:.75rem;font-weight:600;margin-right:.25rem}
+  .bug{background:#fde8e8;color:#c0392b}
+  .warn{background:#fef3cd;color:#856404}
+  .info{background:#dbeafe;color:#1d4ed8}
+  .ok{background:#d1fae5;color:#065f46}
+  .none{background:#f1f5f9;color:#475569}
+  ul{margin:.3rem 0 .6rem 1.25rem}
+  li{margin:.2rem 0}
+  .metric-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:.75rem;margin:.5rem 0 1rem}
+  .metric-card{background:#f7f8fa;border:1px solid #e5e7eb;border-radius:6px;padding:.6rem .8rem}
+  .metric-val{font-size:1.6rem;font-weight:700;color:#1f2328;line-height:1.2}
+  .metric-label{font-size:.75rem;color:#57606a;margin-top:.15rem}
+  .metric-val.bad{color:#c0392b}
+  .metric-val.warn{color:#856404}
+  .metric-val.ok{color:#065f46}
+  code{background:#f7f8fa;border:1px solid #e5e7eb;border-radius:3px;padding:.05rem .3rem;font-size:.82rem;font-family:"SFMono-Regular","Consolas","Courier New",monospace}
+  .section{margin-bottom:1.5rem}
+  .file-ref{color:#3b82d4;font-family:"SFMono-Regular","Consolas","Courier New",monospace;font-size:.82rem}
+  footer{margin-top:2.5rem;padding-top:.75rem;border-top:1px solid #e5e7eb;text-align:center;font-size:.75rem;color:#57606a}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1>GridCraft — BEFORE Baseline</h1>
+  <p class="subtitle">IBM Bob 2.0 Hackathon · Developer Workflow Analysis · Pre-improvement snapshot</p>
+
+  
+  <div class="metric-grid">
+    <div class="metric-card"><div class="metric-val bad">0</div><div class="metric-label">Test files</div></div>
+    <div class="metric-card"><div class="metric-val bad">0</div><div class="metric-label">Test cases</div></div>
+    <div class="metric-card"><div class="metric-val bad">0 %</div><div class="metric-label">Code coverage</div></div>
+    <div class="metric-card"><div class="metric-val bad">6</div><div class="metric-label">Confirmed bugs</div></div>
+    <div class="metric-card"><div class="metric-val warn">7</div><div class="metric-label">Code-quality issues</div></div>
+    <div class="metric-card"><div class="metric-val warn">4</div><div class="metric-label">Dead-code items</div></div>
+    <div class="metric-card"><div class="metric-val bad">0</div><div class="metric-label">Lint / type-check</div></div>
+    <div class="metric-card"><div class="metric-val ok">1</div><div class="metric-label">npm scripts (useful)</div></div>
+  </div>
+
+  
+  <div class="section">
+    <h2>1. Project Overview</h2>
+    <p><strong>GridCraft</strong> is a browser-based pixel-art tool built with React 19 + Vite. Users paint on resizable grids (16×16 to 128×128), use flood-fill, erase, undo/redo, export to PNG, and import images. It is deployed to Vercel at <code>gridcraft-by-me.vercel.app</code>.</p>
+
+    <h3>Technology Stack</h3>
+    <table>
+      <tr><th>Layer</th><th>Technology</th><th>Version</th></tr>
+      <tr><td>UI framework</td><td>React + ReactDOM</td><td>^19.2.8</td></tr>
+      <tr><td>Build tool</td><td>Vite + @vitejs/plugin-react</td><td>^8.2 / ^6.0.5</td></tr>
+      <tr><td>Export library</td><td>html2canvas</td><td>^1.4.1</td></tr>
+      <tr><td>Analytics</td><td>@vercel/analytics</td><td>^2.0.1</td></tr>
+      <tr><td>Fonts</td><td>Google Fonts + custom Minecraft.woff2</td><td>—</td></tr>
+      <tr><td>Icons</td><td>Font Awesome 6.5.1 (CDN)</td><td>—</td></tr>
+      <tr><td>Deployment</td><td>Vercel (SPA rewrite rule)</td><td>—</td></tr>
+      <tr><td>Testing</td><td><span class="badge bad">NONE</span></td><td>—</td></tr>
+      <tr><td>Linting</td><td><span class="badge bad">NONE</span></td><td>—</td></tr>
+      <tr><td>TypeScript</td><td><span class="badge bad">NONE</span></td><td>—</td></tr>
+    </table>
+
+    <h3>npm Scripts</h3>
+    <table>
+      <tr><th>Script</th><th>Command</th><th>Result</th></tr>
+      <tr><td><code>npm test</code></td><td><code>echo "Error: no test specified" &amp;&amp; exit 1</code></td><td><span class="badge bug">FAILS (exit 1) — stub only</span></td></tr>
+      <tr><td><code>npm run dev</code></td><td><code>vite</code></td><td><span class="badge ok">Works</span></td></tr>
+      <tr><td><code>npm run build</code></td><td><code>vite build</code></td><td><span class="badge ok">Works</span></td></tr>
+      <tr><td><code>npm run preview</code></td><td><code>vite preview</code></td><td><span class="badge ok">Works</span></td></tr>
+    </table>
+  </div>
+
+  
+  <div class="section">
+    <h2>2. Architecture</h2>
+    <p>All application state lives in a single root component. There is no Context API, no external store, and no routing library.</p>
+    <table>
+      <tr><th>File</th><th>Role</th><th>Key state / concern</th></tr>
+      <tr><td><span class="file-ref">App.jsx</span></td><td>Root — owns all state</td><td>cells[], history[], future[], gridSize, tools, theme, import/export logic</td></tr>
+      <tr><td><span class="file-ref">Grid.jsx</span></td><td>Renders pixel grid</td><td>Mouse events, coordinate labels, paint-on-drag</td></tr>
+      <tr><td><span class="file-ref">Tools.jsx</span></td><td>Toolbar (undo/redo, eraser, fill, brush, color, clear)</td><td>Passes actions back to App via props</td></tr>
+      <tr><td><span class="file-ref">Menu.jsx</span></td><td>Top menu (export, import, shortcuts modal, links)</td><td>Monkey-patches <code>HTMLAnchorElement.prototype.click</code> during export</td></tr>
+      <tr><td><span class="file-ref">Header.jsx</span></td><td>Title + theme toggle</td><td>Reads isDarkTheme prop</td></tr>
+      <tr><td><span class="file-ref">Contributors.jsx</span></td><td>GitHub contributors marquee</td><td>Live GitHub API fetch on every mount</td></tr>
+      <tr><td><span class="file-ref">ErrorPage.jsx</span></td><td>404 fallback</td><td>Rendered by path check — unreachable in production</td></tr>
+      <tr><td><span class="file-ref">toastMessages.js</span></td><td>MutationObserver — strips leading emoji from toasts</td><td>Side-effect-only import; no exports</td></tr>
+      <tr><td><span class="file-ref">main.jsx</span></td><td>React entry point</td><td>Injects Vercel analytics</td></tr>
+    </table>
+
+    <h3>State Model</h3>
+    <p>Grid = flat 1-D array of length <code>gridSize²</code>. Each element is <code>null</code> (transparent) or a hex colour string. Index math: <code>row = Math.floor(idx / gridSize)</code>, <code>col = idx % gridSize</code>. Every <code>paintCell</code> call pushes a history snapshot; cap = 15 entries.</p>
+  </div>
+
+  
+  <div class="section">
+    <h2>3. Confirmed Bugs</h2>
+
+    <h3><span class="badge bug">BUG-1</span> Theme toggle is inverted (AGENTS.md known bug)</h3>
+    <p><span class="file-ref">App.jsx:48</span> — <code>document.body.classList.toggle('light-theme', prev)</code> uses <code>prev</code> (the old value) as the force flag instead of <code>!prev</code>. The body class is toggled to match the <em>previous</em> state, meaning light-theme is added when switching to dark and removed when switching to light. Theme is always one click behind.</p>
+
+    <h3><span class="badge bug">BUG-2</span> <code>isSmallScreen</code> state is computed but never used</h3>
+    <p><span class="file-ref">App.jsx:41</span> — <code>isSmallScreen</code> is initialised with a bare <code>window.innerWidth</code> read (breaks SSR / jsdom), kept in sync on resize, but is <strong>never referenced</strong> anywhere in the JSX or logic. Mobile users get only a toast message; no layout or capability changes are applied.</p>
+
+    <h3><span class="badge bug">BUG-3</span> ErrorPage is unreachable in production</h3>
+    <p><span class="file-ref">App.jsx:383–386</span> + <span class="file-ref">vercel.json</span> — Vercel rewrites every path to <code>/index.html</code>, so <code>window.location.pathname</code> is always <code>"/"</code>. The 404 branch never fires on the live deployment; <code>ErrorPage</code> is dead code in production.</p>
+
+    <h3><span class="badge bug">BUG-4</span> Favicon path is wrong</h3>
+    <p><span class="file-ref">index.html:5</span> — <code>href="./public/logo.png"</code> is incorrect. Vite serves <code>public/</code> at <code>/</code>; the correct path is <code>/logo.png</code>. The favicon is broken for the Vite dev server and production build.</p>
+
+    <h3><span class="badge bug">BUG-5</span> <code>exportWithFilename</code> is defined but never called</h3>
+    <p><span class="file-ref">Menu.jsx:7–30</span> — A full custom-filename export flow (with prompt + filename sanitisation + prototype patch) is implemented but the export button (<span class="file-ref">Menu.jsx:37</span>) calls <code>downloadImage</code> directly, bypassing it entirely. The feature is silently absent.</p>
+
+    <h3><span class="badge bug">BUG-6</span> <code>changeGridSize</code> unconditionally hides grid for ≥32</h3>
+    <p><span class="file-ref">App.jsx:189</span> — <code>setShowGrid(newSize &lt; 32)</code> forces grid lines off for 32×32, 64×64, and 128×128, overriding any prior user preference without warning. A user who explicitly enabled the grid on a 64×64 canvas loses it on every grid-size change.</p>
+  </div>
+
+  
+  <div class="section">
+    <h2>4. Code-Quality &amp; Design Issues</h2>
+    <table>
+      <tr><th>#</th><th>Severity</th><th>Location</th><th>Description</th></tr>
+      <tr>
+        <td>CQ-1</td>
+        <td><span class="badge warn">WARN</span></td>
+        <td><span class="file-ref">App.jsx:209</span></td>
+        <td><code>floodFill</code> captures <code>gridSize</code> from the outer App closure. Extracting it to a utility file (for testing) requires passing it as an explicit parameter — a refactor blocker.</td>
+      </tr>
+      <tr>
+        <td>CQ-2</td>
+        <td><span class="badge warn">WARN</span></td>
+        <td><span class="file-ref">package.json:19</span></td>
+        <td><code>"type": "commonjs"</code> is declared but the entire codebase uses ESM (<code>import</code>/<code>export</code>). Misleading; could break tooling that respects this field.</td>
+      </tr>
+      <tr>
+        <td>CQ-3</td>
+        <td><span class="badge warn">WARN</span></td>
+        <td><span class="file-ref">index.html:6, 11–16</span></td>
+        <td>Duplicate <code>&lt;link rel="preconnect"&gt;</code> blocks for Google Fonts — identical declarations repeated twice, adding unnecessary DNS round-trips.</td>
+      </tr>
+      <tr>
+        <td>CQ-4</td>
+        <td><span class="badge warn">WARN</span></td>
+        <td><span class="file-ref">index.html:26</span></td>
+        <td>SEO meta description still says "16x16 grid" even though the app supports up to 128×128. Stale documentation.</td>
+      </tr>
+      <tr>
+        <td>CQ-5</td>
+        <td><span class="badge warn">WARN</span></td>
+        <td><span class="file-ref">Grid.jsx:91</span></td>
+        <td><code>key={index}</code> used for grid cells. Using array index as key prevents React from efficiently reconciling reorders and is a React anti-pattern.</td>
+      </tr>
+      <tr>
+        <td>CQ-6</td>
+        <td><span class="badge warn">WARN</span></td>
+        <td><span class="file-ref">src/index.css:342–354</span></td>
+        <td>Hard-coded <code>background-color: white; color: black</code> in <code>.tool-btn--active</code> and <code>.tool-btn--fill-bg</code> break light-mode theming. These should use CSS custom properties.</td>
+      </tr>
+      <tr>
+        <td>CQ-7</td>
+        <td><span class="badge info">INFO</span></td>
+        <td><span class="file-ref">App.jsx:118 / Tools.jsx:157</span></td>
+        <td><code>window.confirm()</code> used for destructive confirmations (clear canvas, grid size change, complex import). Blocks the browser event loop; not testable; not customisable. Three separate call sites with slightly different messages.</td>
+      </tr>
+    </table>
+  </div>
+
+  
+  <div class="section">
+    <h2>5. Dead / Unreachable Code</h2>
+    <table>
+      <tr><th>Item</th><th>Location</th><th>Notes</th></tr>
+      <tr><td><code>exportWithFilename()</code></td><td><span class="file-ref">Menu.jsx:7–30</span></td><td>Defined, never invoked. Export button calls <code>downloadImage</code> directly.</td></tr>
+      <tr><td><code>isSmallScreen</code> state + resize handler</td><td><span class="file-ref">App.jsx:41, 152</span></td><td>Computed, kept current, never read.</td></tr>
+      <tr><td><code>ErrorPage</code> branch</td><td><span class="file-ref">App.jsx:385–387</span></td><td>Path check never triggers in production due to Vercel SPA rewrite.</td></tr>
+      <tr><td>Minecraft font in <code>index.html</code></td><td><span class="file-ref">index.html</span></td><td>Only loaded from <code>public/fonts/Minecraft.woff2</code> via CSS; the OTF file referenced in README under <code>public/fonts/Minecraft.otf</code> no longer exists.</td></tr>
+    </table>
+  </div>
+
+  
+  <div class="section">
+    <h2>6. Security &amp; Privacy Concerns</h2>
+    <table>
+      <tr><th>Issue</th><th>Severity</th><th>Detail</th></tr>
+      <tr><td>Unsanitised user input in export filename</td><td><span class="badge warn">LOW</span></td><td><span class="file-ref">Menu.jsx:11–16</span> — The sanitisation regex in <code>exportWithFilename</code> is correct, but the function is never reached; the default export uses the hard-coded filename <code>gridcraft.png</code>.</td></tr>
+      <tr><td>Unauthenticated GitHub API calls</td><td><span class="badge info">INFO</span></td><td><span class="file-ref">Contributors.jsx:55</span> — No token; subject to 60 req/h rate limit per IP. High-traffic scenarios silently fail.</td></tr>
+      <tr><td>Monkey-patching global prototype</td><td><span class="badge warn">LOW</span></td><td><span class="file-ref">Menu.jsx:19–29</span> — <code>HTMLAnchorElement.prototype.click</code> is temporarily replaced. Any other <code>click()</code> on an anchor during an active export will have its <code>download</code> attribute silently hijacked.</td></tr>
+      <tr><td>Bare <code>window.*</code> reads at module load time</td><td><span class="badge info">INFO</span></td><td><span class="file-ref">App.jsx:41 / Contributors.jsx:45</span> — Reads outside <code>useEffect</code> crash in any non-browser environment (SSR, jsdom test runners).</td></tr>
+      <tr><td><code>beforeunload</code> always fires</td><td><span class="badge info">INFO</span></td><td><span class="file-ref">App.jsx:133–136</span> — The "are you sure?" dialog fires even on a blank canvas, creating UX friction for first-time users.</td></tr>
+    </table>
+  </div>
+
+  
+  <div class="section">
+    <h2>7. Existing Tests &amp; Test Infrastructure</h2>
+    <table>
+      <tr><th>Category</th><th>Status</th><th>Detail</th></tr>
+      <tr><td>Test runner</td><td><span class="badge bad">ABSENT</span></td><td>No Vitest, Jest, Mocha, or any other framework installed.</td></tr>
+      <tr><td>Test files</td><td><span class="badge bad">ZERO</span></td><td>Glob for <code>**/*.test.*</code> and <code>**/*.spec.*</code> returned 0 results.</td></tr>
+      <tr><td><code>npm test</code> result</td><td><span class="badge bad">EXIT 1</span></td><td>Stub: <code>echo "Error: no test specified" &amp;&amp; exit 1</code></td></tr>
+      <tr><td>Lint / type-check</td><td><span class="badge bad">ABSENT</span></td><td>No ESLint, Prettier, or TypeScript configuration.</td></tr>
+      <tr><td>CI pipeline</td><td><span class="badge bad">ABSENT</span></td><td>No <code>.github/workflows/</code> directory; only issue templates exist.</td></tr>
+      <tr><td>Code coverage</td><td><span class="badge bad">0 %</span></td><td>No coverage tooling configured.</td></tr>
+    </table>
+  </div>
+
+  
+  <div class="section">
+    <h2>8. Missing Test Coverage (Priority Areas)</h2>
+    <table>
+      <tr><th>Priority</th><th>Unit Under Test</th><th>Behaviour to Verify</th></tr>
+      <tr><td><span class="badge bug">HIGH</span></td><td><code>floodFill()</code></td><td>Fills connected region; stops at boundaries; handles fully-filled grid; same-color no-op; correct index math for all grid sizes</td></tr>
+      <tr><td><span class="badge bug">HIGH</span></td><td><code>toggleTheme()</code></td><td>Correctly adds/removes <code>light-theme</code> class (BUG-1 would be caught here)</td></tr>
+      <tr><td><span class="badge bug">HIGH</span></td><td><code>paintCell()</code></td><td>No-op when color unchanged; eraser sets null; fill delegates to floodFill; blocked in preview mode; pushes history correctly</td></tr>
+      <tr><td><span class="badge warn">MED</span></td><td><code>undo()</code> / <code>redo()</code></td><td>Moves states between history/future; respects MAX_HISTORY cap; no-op when stack empty</td></tr>
+      <tr><td><span class="badge warn">MED</span></td><td><code>changeGridSize()</code></td><td>Clears cells and history; rejects same-size no-op; sets showGrid correctly</td></tr>
+      <tr><td><span class="badge warn">MED</span></td><td><code>importImage()</code></td><td>Rejects non-image files; maps alpha&lt;30 to null; pushes history; triggers confirm for high color-count</td></tr>
+      <tr><td><span class="badge warn">MED</span></td><td><code>downloadImage()</code></td><td>Guard against double-export; adds/removes CSS classes around html2canvas; shows error toast on failure</td></tr>
+      <tr><td><span class="badge warn">MED</span></td><td><code>rgbToHex()</code></td><td>Correct hex output for boundary values (0, 255, mixed)</td></tr>
+      <tr><td><span class="badge info">LOW</span></td><td><code>handleKeyPress()</code></td><td>All shortcuts fire correct actions; preview mode blocks tool keys; undo/redo bypass preview gate</td></tr>
+      <tr><td><span class="badge info">LOW</span></td><td><code>buildMarqueeItems()</code></td><td>Pads to MIN_MARQUEE_ITEMS; doubles array; empty input returns []</td></tr>
+      <tr><td><span class="badge info">LOW</span></td><td><code>getReadableTextColor()</code></td><td>Returns dark text on light bg, light text on dark bg</td></tr>
+      <tr><td><span class="badge info">LOW</span></td><td>Toast system</td><td>Renders correct type class; auto-dismisses after 3 s; debounces repeated calls</td></tr>
+    </table>
+  </div>
+
+  
+  <div class="section">
+    <h2>9. Current Developer Workflow — Manual Steps Required</h2>
+    <table>
+      <tr><th>Activity</th><th>Current approach</th><th>Pain point</th></tr>
+      <tr><td>Verify a bug fix</td><td>Run <code>npm run dev</code>, manually interact in browser</td><td>No automated regression; every fix requires full visual verification</td></tr>
+      <tr><td>Code review</td><td>Read source files; no static analysis output</td><td>No lint, no type info; reviewers must mentally trace logic for correctness</td></tr>
+      <tr><td>Find regressions</td><td>Manual smoke test of all tools</td><td>No CI; regressions are only discovered post-merge</td></tr>
+      <tr><td>Validate logic correctness</td><td>Launch browser, paint cells, click every button</td><td>floodFill, undo/redo, theme toggle — all verified by hand only</td></tr>
+      <tr><td>Catch the theme-toggle bug</td><td>Click theme toggle twice, observe DOM class</td><td>Not obvious; the bug only appears after two clicks</td></tr>
+      <tr><td>Validate export flow</td><td>Export, inspect downloaded PNG</td><td>Requires browser environment; can't be done headlessly</td></tr>
+      <tr><td>Onboard a contributor</td><td>Read README + Manual; run locally</td><td>No setup automation; no test baseline to confirm their env works</td></tr>
+      <tr><td>Detect dead code</td><td>Manual grep / code reading</td><td>No static analysis; <code>isSmallScreen</code> and <code>exportWithFilename</code> survived unnoticed</td></tr>
+    </table>
+  </div>
+
+  
+  <div class="section">
+    <h2>10. Measurable Metrics (BEFORE)</h2>
+    <table>
+      <tr><th>Metric</th><th>Current (BEFORE)</th><th>Target (AFTER)</th></tr>
+      <tr><td>Unit test files</td><td>0</td><td>≥ 3</td></tr>
+      <tr><td>Unit test cases</td><td>0</td><td>≥ 30</td></tr>
+      <tr><td>Code coverage (lines)</td><td>0 %</td><td>≥ 70 %</td></tr>
+      <tr><td>Confirmed bugs</td><td>6</td><td>0</td></tr>
+      <tr><td>Dead-code items</td><td>4</td><td>0</td></tr>
+      <tr><td>npm test exit code</td><td>1 (fail)</td><td>0 (pass)</td></tr>
+      <tr><td>CI pipeline</td><td>None</td><td>GitHub Actions on PR</td></tr>
+      <tr><td>Lint errors</td><td>Unknown (no tooling)</td><td>0</td></tr>
+      <tr><td>Manual steps to verify a bug fix</td><td>~8 steps</td><td>1 (run tests)</td></tr>
+      <tr><td>Time to catch theme-toggle bug</td><td>Manual click test (~2 min)</td><td>Automated test (&lt;1 s)</td></tr>
+    </table>
+  </div>
+
+  <footer>Made with IBM Bob</footer>
+</div>
+</body>
+</html>

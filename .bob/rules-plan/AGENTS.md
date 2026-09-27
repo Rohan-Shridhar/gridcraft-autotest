@@ -1,0 +1,11 @@
+# Project Architecture Constraints (Non-Obvious Only)
+
+- **`ErrorPage` is architecturally unreachable.** `vercel.json` rewrites all routes to `index.html`, so `window.location.pathname` is always `"/"` in production. Any real routing feature requires adding a router library (React Router, etc.) — the current path-check in `App.jsx:383` cannot be extended to handle sub-routes.
+- **All state is in one 470-line `App.jsx` — intentionally.** There is no Context, no Zustand, no Redux. Adding a state library is an architectural change that requires buy-in; do not introduce one for a local fix.
+- **The undo/redo system uses three parallel state arrays** (`cells`, `history`, `future`) that must be updated atomically within a single logical action. Splitting any of these updates across separate `setState` calls will corrupt the history stack.
+- **`floodFill` is a pure function but depends on `gridSize` from the `App` closure**, not its arguments. It is safe to call during render-phase computation but must not be moved outside `App` without making `gridSize` an explicit argument.
+- **`paintCell` is `useCallback`-memoised but `floodFill` is not.** `floodFill` is recreated every render and called from inside `paintCell`'s closure — any refactor that makes `floodFill` asynchronous or memoised will introduce stale-closure bugs.
+- **`handleKeyPress` lists `undo`/`redo` as implicit dependencies** (they are called but not in the `useCallback` dep array). This is a latent stale-closure bug: changes to `undo`/`redo` internals may not be reflected in the keyboard handler until the next dep-array trigger.
+- **`Contributors.jsx` makes an unauthenticated GitHub API call** (60 req/hr per IP). High-traffic deployments or shared networks will silently rate-limit this. Any plan that increases fetch frequency must add a GitHub token.
+- **The PNG export temporarily mutates the live DOM** (adds/removes `no-border`/`no-gap` classes on `#pixel-grid`). Any feature that renders during export (e.g. a loading overlay inside the grid) will be captured in the exported image.
+- **`changeGridSize` force-sets `setShowGrid(newSize < 32)`**, silently toggling preview mode without user consent when switching to 32×32 or larger. Plans involving grid-size changes must account for this side effect.
